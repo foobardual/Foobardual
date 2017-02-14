@@ -5,6 +5,7 @@ Community project among fp dual students.
  - Se creara los archivos de tal manera que sean óptimos en un tamaño de pantalla igual a un Samsung s5
  - Los módulos comunes tales como cabeceras, footers, etc, se omitiran para ser desarrollados mas adelante
  una vez se haya escogido el diseño a seguir
+ 
 ### HTML
  - Elemento div con clase container que contiene todo el contenido para facilitar el responsive
  - Un h1 con el título de la pagina
