@@ -6,7 +6,7 @@ Community project among fp dual students.
  - Elemento div con clase container que contiene todo el contenido para facilitar el responsive
  - Un h1 con el título de la pagina
  - Un h2 para los títulos de las subsecciones
- - No se usará el elemento HTLM article
+ - No se usará el elemento HTML article
  
 ### CSS
 - Se restringe el uso a propiedades display y width(en %)
