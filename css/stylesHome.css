@@ -2,44 +2,50 @@ div#container {
     width: 100%;
 }
 h1 {
-    width: 11%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.aparece {
+   display: none;
 }
 
 div#resumen {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 nav {
-    width: 17%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    text-align: center;
+
 }
 
-nav > a{
-    width:inherit;
+nav > a {
+    width: inherit;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #resumen > input {
-    margin-left: 47%;
-    margin-right: 47%;
+
 }
 
-#blanco {
+.div#resumen {
     width: 75%;
-    margin-left: 12%;
-    margin-right: 12%;
-    height: 250px;
-    background-color: wheat;
-    margin-top: -244px;
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
 }
 
-.desaparece {
-    /*Transición too molona para el resumen*/
-    display: none;
-
+div#contenido {
+    font-family: sans-serif;
+    font-size: small;
 }
