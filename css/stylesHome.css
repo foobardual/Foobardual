@@ -31,10 +31,11 @@ nav > a {
     width: inherit;
     margin-left: 15%;
     margin-right: 15%;
+    font-size: 160%;
 }
 
 #resumen > input {
-
+    font-size: 160%;
 }
 
 .div#resumen {
