@@ -1,0 +1,35 @@
+/*reset basico para fuente*/
+body{
+    font-size: 16px;
+}
+*{font-size: 1.2rem;}
+
+.menu{display: none}
+.menu.active{
+    display: block;
+    height: 100%;
+    position: absolute;
+    border: 1px solid;
+    top: 108px;
+    padding: 20px;
+    background-color: white}
+header{
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+header>div{
+    width: 100%;
+    display: block;
+}
+header div, header a, header h1, header button{
+    display: inline-block;
+}
+header .buscar{float:right; padding: 29px 0;}
+.buscar input {
+    width: 100px;
+}
+header h1{
+    font-size: 1.6rem;
+    width: calc(100% - 350px);
+    text-align: center;
+}
