@@ -1,89 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/header.js"></script>
     <meta charset="UTF-8">
     <title>¿Donde trabajaras?</title>
 </head>
 <body>
-<style>
-    /*reset basico para fuente*/
-    body{
-        font-size: 16px;
-    }
-    *{font-size: 1.2rem;}
-
-    .menu{display: none}
-    .menu.active{
-        display: block;
-        height: 100%;
-        position: absolute;
-        border: 1px solid;
-        top: 108px;
-        padding: 20px;
-        background-color: white}
-    header{
-        border-bottom: 1px solid black;
-        height: 100px;
-    }
-    header>div{
-        width: 100%;
-        display: block;
-    }
-    header div, header a, header h1, header button{
-        display: inline-block;
-    }
-    header .buscar{float:right; padding: 29px 0;}
-    .buscar input {
-        width: 100px;
-    }
-    header h1{
-        font-size: 1.6rem;
-        width: calc(100% - 350px);
-        text-align: center;
-    }
-</style>
-<script>
-    var desplegarMenu= function(){
-        var menu = document.getElementsByClassName("menu")[0];
-        if(menu.className=="menu"){
-            menu.className="menu active";
-        }
-        else{
-            menu.className="menu";
-        }
-    }
-</script>
-
-
-<header>
-    <div>
+<div class="container">
+    <header>
         <div>
-            <button onclick="desplegarMenu()">Menu</button>
-            <div class="menu">
-                <a href="index.html#quieres_estudiar">¿Quieres estudiar?</a>
-                <ul>
-                    <li><a href="como_acceder.html">¿Como acceder?</a></li>
-                    <li><a href="como_funciona.html">¿Como funciona?</a></li>
-                    <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
-                    <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
-                </ul>
-                <!--en caso de entrar como empresario borrar la lista de navegacion de arriba y utilizar la siguiente-->
-                <!--<a href="index.html#quieres_contratar">¿Quieres trabajar?</a>-->
-                <!--<ul>-->
-                <!--<li><a href="pages/que_perfiles_ofrecemos.html">¿Que perfiles ofrecemos?</a></li>-->
-                <!--<li><a href="pages/como_contratar.html">¿Como contratar?</a></li>-->
-                <!--<li><a href="pages/experiencias.html">Experiencias</a></li>-->
-                <!--</ul>-->
+            <div>
+                <button onclick="desplegarMenu()">Menu</button>
+                <div class="menu">
+                    <a href="index.html#quieres_estudiar">¿Quieres estudiar?</a>
+                    <ul>
+                        <li><a href="como_acceder.html">¿Como acceder?</a></li>
+                        <li><a href="como_funciona.html">¿Como funciona?</a></li>
+                        <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
+                        <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
+                    </ul>
+                    <!--en caso de entrar como empresario borrar la lista de navegacion de arriba y utilizar la siguiente-->
+                    <!--<a href="index.html#quieres_contratar">¿Quieres trabajar?</a>-->
+                    <!--<ul>-->
+                    <!--<li><a href="pages/que_perfiles_ofrecemos.html">¿Que perfiles ofrecemos?</a></li>-->
+                    <!--<li><a href="pages/como_contratar.html">¿Como contratar?</a></li>-->
+                    <!--<li><a href="pages/experiencias.html">Experiencias</a></li>-->
+                    <!--</ul>-->
+                </div>
+            </div>
+            <a href="index.html">FooBar Dual</a>
+            <h1>¿Donde trabajaras?</h1>
+            <div class="buscar">
+                <input type="text" placeholder="buscar"/>
             </div>
         </div>
-        <a href="index.html">FooBar Dual</a>
-        <h1>¿Donde trabajaras?</h1>
-        <div class="buscar">
-            <input type="text" placeholder="buscar"/>
-        </div>
-    </div>
-</header>
-<div class="container">
+    </header>
     <section id="empresas_participantes">
         <h2>empresas participantes</h2>
         <ul><li>2015<ul>
