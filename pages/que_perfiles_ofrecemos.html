@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/header.js"></script>
     <meta charset="UTF-8">
     <title>Que perfiles ofrecemos?</title>
 </head>
 <body>
 <div class="container">
+    <header>
+        <div>
+            <div>
+                <button onclick="desplegarMenu()">Menu</button>
+                <div class="menu">
+                    <a href="index.html#quieres_estudiar">¿Quieres estudiar?</a>
+                    <ul>
+                        <li><a href="como_acceder.html">¿Como acceder?</a></li>
+                        <li><a href="como_funciona.html">¿Como funciona?</a></li>
+                        <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
+                        <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
+                    </ul>
+                    <!--en caso de entrar como empresario borrar la lista de navegacion de arriba y utilizar la siguiente-->
+                    <!--<a href="index.html#quieres_contratar">¿Quieres trabajar?</a>-->
+                    <!--<ul>-->
+                    <!--<li><a href="pages/que_perfiles_ofrecemos.html">¿Que perfiles ofrecemos?</a></li>-->
+                    <!--<li><a href="pages/como_contratar.html">¿Como contratar?</a></li>-->
+                    <!--<li><a href="pages/experiencias.html">Experiencias</a></li>-->
+                    <!--</ul>-->
+                </div>
+            </div>
+            <a href="index.html">FooBar Dual</a>
+            <h1>¿Que perfiles ofrecemos?</h1>
+            <div class="buscar">
+                <input type="text" placeholder="buscar"/>
+            </div>
+        </div>
+    </header>
     <h1>¿que perfiles ofrecemos?</h1>
-    <section>
+    <section id="nuestros_candidatos">
         <h2>nuestros candidatos</h2>
     </section>
-    <section>
+    <section id="proyectos_del_alumnado">
         <h2>proyectos del alumnado</h2>
         <p>En el curso del 2016/2017 se desarrollo el siguiente proyecto: <a
                 href="https://github.com/foobardual/Foobardual"> Página Foo Bar Dual</a></p>
     </section>
-    <section>
+    <section id="conocimientos_estimados_por_fecha">
         <h2>conocimientos estimados por fecha</h2>
     </section>
-    <section>
+    <section id="conocimientos_estimados_en_marzo">
         <h2>conocimientos estimados en marzo</h2>
         <ul>
-            <li><h3>Programación:</h3>
+            <li><h3>programación:</h3>
                 <ul>
                     <li><h4>lenguajes:</h4>
                         <ul>
@@ -113,19 +143,19 @@
             </li>
         </ul>
     </section>
-    <section>
+    <section id="competencias">
         <h2>competencias</h2>
         <p>Contenido por escribir</p>
     </section>
-    <section>
+    <section id="ocupaciones_recomendadas">
         <h2>ocupaciones recomendadas</h2>
         <p>Contenido por escribir</p>
     </section>
-    <section>
+    <section id="demandas_de_formacion">
         <h2>demandas de formación</h2>
         <p>Contenido por escribir</p>
     </section>
-    <section>
+    <section id="puestos_desempenados">
         <h2>puestos desempeñados</h2>
         <p>Contenido por escribir</p>
     </section>
