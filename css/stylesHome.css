@@ -1,3 +1,8 @@
+body{
+    font-size: 16px;
+}
+*{font-size: 1.2rem;}
+
 div#container {
     width: 100%;
 }
