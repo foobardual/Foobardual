@@ -26,7 +26,10 @@ nav {
     text-align: center;
 
 }
-
+nav.mainOptions>div{
+    display: inline-block;
+    width: 49%;
+}
 nav > a {
     width: inherit;
     margin-left: 15%;
