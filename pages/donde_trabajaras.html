@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/header.js"></script>
     <meta charset="UTF-8">
     <title>¿Donde trabajaras?</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/header.js"></script>
 </head>
 <body>
-<div class="container">
-    <header>
+<header>
+    <h1>donde trabajaras?</h1>
+    <div>
         <div>
-            <div>
-                <button onclick="desplegarMenu()">Menu</button>
-                <div class="menu">
-                    <a href="../index.html#quieres_estudiar">¿Quieres estudiar?</a>
-                    <ul>
-                        <li><a href="como_acceder.html">¿Como acceder?</a></li>
-                        <li><a href="como_funciona.html">¿Como funciona?</a></li>
-                        <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
-                        <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
-                    </ul>
-                    <!--en caso de entrar como empresario borrar la lista de navegacion de arriba y utilizar la siguiente-->
-                    <!--<a href="index.html#quieres_contratar">¿Quieres trabajar?</a>-->
-                    <!--<ul>-->
-                    <!--<li><a href="pages/que_perfiles_ofrecemos.html">¿Que perfiles ofrecemos?</a></li>-->
-                    <!--<li><a href="pages/como_contratar.html">¿Como contratar?</a></li>-->
-                    <!--<li><a href="pages/experiencias.html">Experiencias</a></li>-->
-                    <!--</ul>-->
-                </div>
-            </div>
-            <a href="../index.html">FooBar Dual</a>
-            <h1>¿Donde trabajaras?</h1>
-            <div class="buscar">
-                <input type="text" placeholder="buscar"/>
+            <button onclick="desplegarMenu()">Menu</button>
+            <div class="menu">
+                <a href="../index.html#quieres_estudiar">¿Quieres estudiar?</a>
+                <ul>
+                    <li><a href="como_acceder.html">¿Como acceder?</a></li>
+                    <li><a href="como_funciona.html">¿Como funciona?</a></li>
+                    <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
+                    <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+        <a href="../index.html">FooBar Dual</a>
+        <div id="cajaH1"></div>
+
+        <div class="buscar">
+            <input type="text" placeholder="buscar"/>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <h1>donde trabajaras?</h1>
     <section id="empresas_participantes">
         <h2>empresas participantes</h2>
-        <ul><li>2015<ul>
-            <li><a href="http://www.brujula.es/">Brujula</a></li>
-            <li><a href="http://www.informa.es/directorio-empresas/Empresa_KUMO-CONSULTORIA.html">Kumo</a></li>
-            <li><a href="http://www.dome-consulting.com/">Dome</a></li>
-            <li><a href="http://www.idiso.com/es/index.html">Idiso</a></li>
-            <li><a href="https://www.xmltravelgate.com/">XML Travelgate</a></li>
-        </ul>
-        </li>
-        </ul>
+        <div class="contents">
+            <ul>
+                <li>2015
+                    <ul>
+                        <li><a href="http://www.brujula.es/">Brujula</a></li>
+                        <li><a href="http://www.informa.es/directorio-empresas/Empresa_KUMO-CONSULTORIA.html">Kumo</a>
+                        </li>
+                        <li><a href="http://www.dome-consulting.com/">Dome</a></li>
+                        <li><a href="http://www.idiso.com/es/index.html">Idiso</a></li>
+                        <li><a href="https://www.xmltravelgate.com/">XML Travelgate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="informacion_de_contacto">
         <h2>información de contacto</h2>
@@ -57,6 +58,39 @@
     <section id="graficas">
         <h2>gráficas</h2>
     </section>
-</div>
+</main>
+<footer>
+    <ul>
+        <li>Contacto
+            <ul>
+                <li>Teléfono del centro: <span class="contacto">971278150</span></li>
+                <li>Fax del centro: <span class="contacto">971278155</span></li>
+                <li><span class="contacto">Email: test@test.com</span></li>
+            </ul>
+        </li>
+        <li>Localización
+            <ul>
+                <li class="contacto">Calle Caracas, 6 (Polígono de Llevant)</li>
+                <li class="contacto">07007 Palma de Mallorca (Illes Balears)</li>
+                <li id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1220.548371809852!2d2.6672159280331953!3d39.56887675907247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55bc574de040df4a!2sIES+Francesc+de+Borja+Moll!5e0!3m2!1ses!2ses!4v1487691882597"
+                            width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </li>
+            </ul>
+        </li>
+        <li>Horario general del centro
+            <ul>
+                <li>Mañana: 8:00h a 15:00h</li>
+                <li>Tarde: 15:45h a 21:30h</li>
+            </ul>
+        </li>
+        <li>Horario secretaria
+            <ul>
+                <li>Mañana: 10:00h a 13:00h (de lunes a viernes)</li>
+                <li>Tarde: Solo los Martes de 16:00h a 20:00h</li>
+            </ul>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
