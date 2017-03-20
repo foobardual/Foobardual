@@ -3,7 +3,7 @@ body {
     font-size: 20px;
 }
 
-.content {
+.contents {
     font-family: 'Crimson Text', serif;
     line-height: 1.5;
 }
@@ -22,7 +22,7 @@ h2 {
 }
 
 .menu {
-    display: none
+    display: none;
 }
 
 .menu.active {
@@ -32,7 +32,7 @@ h2 {
     border: 1px solid;
     top: 108px;
     padding: 20px;
-    background-color: white
+    background-color: white;
 }
 
 header {
@@ -52,6 +52,7 @@ header div, header a, header h1, header button {
 header div:first-child {
     padding: 3%;
 }
+
 header .buscar {
     float: right;
     padding: 29px 0;
@@ -69,3 +70,4 @@ header h1 {
     left: 18%;
     top: 0;
 }
+
