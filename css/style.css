@@ -1,9 +1,9 @@
 /*reset basico para fuente*/
-body{
+body {
     font-size: 20px;
 }
 
-.contents{
+.contents {
     font-family: 'Crimson Text', serif;
     line-height: 1.5;
 }
@@ -21,11 +21,11 @@ h2 {
     font-size: 1.5em;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.menu.active{
+.menu.active {
     display: block;
     height: 100%;
     position: absolute;
@@ -35,17 +35,17 @@ h2 {
     background-color: white;
 }
 
-header{
+header {
     border-bottom: 1px solid black;
     height: 100px;
 }
 
-header>div{
+header > div {
     width: 100%;
     display: block;
 }
 
-header div, header a, header h1, header button{
+header div, header a, header h1, header button {
     display: inline-block;
 }
 
@@ -53,8 +53,8 @@ header div:first-child {
     padding: 3%;
 }
 
-header .buscar{
-    float:right;
+header .buscar {
+    float: right;
     padding: 29px 0;
 }
 
@@ -62,7 +62,7 @@ header .buscar{
     width: 100px;
 }
 
-header h1{
+header h1 {
     font-size: 2em;
     width: calc(100% - 350px);
     text-align: center;
