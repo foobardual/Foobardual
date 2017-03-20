@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    html {
+    height: 100%;
+    font-family: 'Droid Sans', sans-serif;
+}
+body {
+  min-height: 100%;
+  font-size: 62.5%;
+  margin: 0;
+     
+}
+h1{
+    font-size:4.8rem;
+}
+span,a,h2{
+    font-size: 1.6rem;
+}
+h2{
+display:inline-block;
+    border-bottom: 2px solid black;
+}
+.contenido{
+    min-height: calc(100% - 98px);
+    position: absolute;
+    min-width: 100%;
+}
+.cabeceraHome,.navegadorHome{
+    width: 100%;
+    display: block;
+    padding:1em;
+    background: black;
+    color:white;
+    min-height: 4rem;
+    position: fixed;
+    z-index: 1;
+    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+}
+.cabeceraHome>div{
+    width: auto;
+    padding: 1.5em;
+    position: fixed;
+    background: black;
+    left: 0;
+    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+}
+.cabeceraHome>div:after{
+    content: ".";
+    font-size: 0;
+    right: -8.7rem;
+    bottom: 3.6rem;
+    border-top: 14rem solid transparent;
+    border-left: 16rem solid black;
+    z-index: -1;
+    text-transform: rotate(45deg);
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+}
+.navegadorHome{
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    -webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+
+}
+.btnHome{
+    display: inline-block;
+    width: calc(33.3% - 30px);
+    padding: 75px 15px 0;
+    text-align: center;
+    height: 6rem;
+    background: black;
+    vertical-align: bottom;
+    -webkit-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+}
+.btnHome.hover{
+    background: transparent;
+    color: black;
+    }
+
+    #items{
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+     background: black;
+  }
+  .item {
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+    height: calc(100vh - 18rem);
+    padding-top: 18rem;
+    text-align: center;
+    background:white;
+}
+
+.segundoMenuHome{
+    width: 100%;
+    padding-top: 3rem;
+    transition: width 0.5s;
+    overflow:hidden;
+}
+.segundoMenuHome>div{
+       margin: 5px 0 5px;
+    background: black;
+    color: white;
+    width: auto;
+    max-width: 100%;
+    padding: 75px 25px;
+    text-align: left;
+    text-indent: 3rem;
+    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+}
+.segundoMenuHome.menuContratar{
+    float:right;
+}
+.segundoMenuHome.menuContratar>div{
+    float:right;
+    clear: right;
+        padding: 75px 0px 75px 50px;
+    text-indent: 0;
+}
+.segundoMenuHome>div{
+    width:0;
+    transition: width 1s ease-out, padding 1s ease-out;
+}
+.segundoMenuHome.menuContratar>div.active{
+    padding:75px 100px 75px 0;
+    text-align:center;
+}
+.segundoMenuHome.menuContratar>div.active:nth-of-type(1){
+    width:calc(50% - 25px);
+    padding-left:25px;
+}
+.segundoMenuHome.menuContratar>div.active:nth-of-type(2){
+    width:calc(50% - 25px);
+    padding-left:calc(10% + 25px);
+}
+.segundoMenuHome.menuContratar>div.active:nth-of-type(3){
+    width:calc(50% - 25px);
+    padding-left:calc(20% + 25px);
+}
+.segundoMenuHome.menuContratar>div.active:nth-of-type(4){
+    width:calc(50% - 25px);
+    padding-left:calc(30% + 25px);
+}
+.segundoMenuHome>div.active:nth-of-type(1){
+    width:50%;
+}
+.segundoMenuHome>div.active:nth-of-type(2){
+    width:60%;
+}
+.segundoMenuHome>div.active:nth-of-type(3){
+    width:70%;
+}
+.segundoMenuHome>div.active:nth-of-type(4){
+    width:80%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cabeceraHome"><div><h1>Foo Bar Dual</h1></div></div>
+    <div class="contenido">
+        <div id="items">
+           <div class="item estudiar">
+             <h2>QUIERES ESTUDIAR?</h2>
+             <div class="segundoMenuHome menuEstudiar">
+             <div><a>¿COMO ACCEDER?</a></div>
+             <div><a>¿COMO FUNCIONA?</a></div>
+             <div><a>¿DONDE TRABAJARAS?</a></div>
+             <div><a>¿DE QUE TRABAJARAS?</a></div>
+             </div>
+           </div>
+           <div class="item resumen">
+             <h2>RESUMEN</h2>
+           </div>
+           <div class="item contratar">
+             <h2>QUIERES CONTRATAR</h2>
+             <div class="segundoMenuHome menuContratar">
+             <div><a>¿COMO ACCEDER?</a></div>
+             <div><a>¿COMO FUNCIONA?</a></div>
+             <div><a>¿DONDE TRABAJARAS?</a></div>
+             <div><a>¿DE QUE TRABAJARAS?</a></div>
+             </div>
+           </div>
+        </div>
+    </div>
+    <div class="navegadorHome"><nav><div class="btnHome" onclick="goEstudiar()"><span>Quieres Estudiar?</span></div><div class="btnHome" onclick="goResumen()"><span>Resumen</span></div><div class="btnHome" onclick="goContratar()"><span>Quieres Contratar?</span></div></nav></div>
+</body>
+<script type="text/javascript">
+
+var botones = document.getElementsByClassName("btnHome");
+
+function scrollTo(element, to, duration) {
+    if (duration <= 0) return;
+    var difference = to - element.scrollLeft;
+    var perTick = difference / duration * 10;
+
+    setTimeout(function() {
+        element.scrollLeft = element.scrollLeft + perTick;
+        if (element.scrollLeft === to) return;
+        scrollTo(element, to, duration - 10);
+    }, 10);
+} 
+    var objDiv = document.getElementById("items");
+
+    var goEstudiar = function(){
+    seleccionarBtnScroll(0);
+    scrollTo(objDiv, 0 , 300);}
+    
+    var goResumen = function(){
+    seleccionarBtnScroll(1);
+    scrollTo(objDiv, (window.innerWidth+3) , 300);}
+    
+    var goContratar = function(){
+    seleccionarBtnScroll(2);
+    scrollTo(objDiv, window.innerWidth*3 , 300);}
+
+    var delayedExec = function(after, fn) {
+    var timer;
+    return function() {
+        timer && clearTimeout(timer);
+        timer = setTimeout(fn, after);
+    };
+};
+
+var seleccionarBtnScroll = function(num){
+for(var i = 0; i<botones.length;i++){
+    botones[i].className = "btnHome"
+}
+    botones[num].className += " hover";
+    
+}
+
+var desplegarOpciones = function(elm, newClass){
+    for(var i = 0; i<elm.children.length; i++){
+        elm.children[i].className = newClass;
+    }
+}
+
+var scrollStopper = delayedExec(500, function() {
+    if(objDiv.scrollLeft-(window.innerWidth/2)<0){
+       goEstudiar(0);
+       desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "active");
+       desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "");
+    }
+    else if(objDiv.scrollLeft-(window.innerWidth*1.5)> 0){
+        goContratar(2);
+        desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "");
+        desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "active");
+    }
+    else{
+        goResumen(1);
+        desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "");
+        desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "");
+    }
+});
+
+    objDiv.addEventListener('scroll', scrollStopper);
+
+
+window.onload = function() {
+  goResumen();
+  console.log(document.getElementById("items"));
+  console.log(document.getElementById("items").style.width);
+   document.getElementById("items").style.width= window.innerWidth + "px";
+  console.log(document.getElementById("items").style.width);  
+  console.log(window.innerWidth);
+};
+</script>
+</html>
