@@ -1,8 +1,14 @@
 /*reset basico para fuente*/
 body {
     font-size: 20px;
+    background-color: #FF80AA;
 }
 
+header {
+    background-color: #A61646;
+}
+.container {
+}
 .contents {
     font-family: 'Crimson Text', serif;
     line-height: 1.5;
@@ -55,7 +61,7 @@ header div:first-child {
 
 header .buscar {
     float: right;
-    padding: 29px 0;
+    padding: 29px;
 }
 
 .buscar input {
@@ -71,3 +77,30 @@ header h1 {
     top: 0;
 }
 
+#calendario>.contents {
+    background: url('../img/ic_date_range_white_48px.svg') no-repeat;
+    background-size: 100% 100%;
+}
+#proceso_seleccion_empresa>.contents {
+    background: url('../img/ic_accessibility_white_48px.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 800px) {
+    .menu {
+        display: block;
+        position: fixed;
+        top: 120px;
+        width: 25%;
+        left: 0;
+        height: 100%;
+        line-height: 2;
+    }
+
+    .container {
+        margin-left: 25%;
+    }
+}
