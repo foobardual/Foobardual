@@ -6,290 +6,478 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-    html {
-    height: 100%;
-    font-family: 'Droid Sans', sans-serif;
-}
-body {
-  min-height: 100%;
-  font-size: 62.5%;
-  margin: 0;
-     
-}
-h1{
-    font-size:4.8rem;
-}
-span,a,h2{
-    font-size: 1.6rem;
-}
-h2{
-display:inline-block;
-    border-bottom: 2px solid black;
-}
-.contenido{
-    min-height: calc(100% - 98px);
-    position: absolute;
-    min-width: 100%;
-}
-.cabeceraHome,.navegadorHome{
-    width: 100%;
-    display: block;
-    padding:1em;
-    background: black;
-    color:white;
-    min-height: 4rem;
-    position: fixed;
-    z-index: 1;
-    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-}
-.cabeceraHome>div{
-    width: auto;
-    padding: 1.5em;
-    position: fixed;
-    background: black;
-    left: 0;
-    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-}
-.cabeceraHome>div:after{
-    content: ".";
-    font-size: 0;
-    right: -8.7rem;
-    bottom: 3.6rem;
-    border-top: 14rem solid transparent;
-    border-left: 16rem solid black;
-    z-index: -1;
-    text-transform: rotate(45deg);
-    -ms-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
-    transform: rotate(-45deg);
-    position: absolute;
-    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-}
-.navegadorHome{
-    position: fixed;
-    bottom: 0;
-    padding: 0;
-    width: 100%;
-    background: none;
-    -webkit-box-shadow:none;
--moz-box-shadow:none;
-box-shadow:none;
+        html {
+            height: 100%;
+            font-family: 'Droid Sans', sans-serif;
+        }
+        body {
+            min-height: 100%;
+            font-size: 62.5%;
+            margin: 0;
 
-}
-.btnHome{
-    display: inline-block;
-    width: calc(33.3% - 30px);
-    padding: 75px 15px 0;
-    text-align: center;
-    height: 6rem;
-    background: black;
-    vertical-align: bottom;
-    -webkit-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
-}
-.btnHome.hover{
-    background: transparent;
-    color: black;
-    }
+        }
+        h1{
+            font-size:4.8rem;
+        }
+        span,a,h2{
+            font-size: 1.6rem;
+        }
+        h2{
+            display:inline-block;
+            border-bottom: 2px solid black;
+        }
+        .contenido{
+            min-height: calc(100% - 98px);
+            position: absolute;
+            min-width: 100%;
+        }
+        .cabeceraHome,.navegadorHome{
+            width: 100%;
+            display: block;
+            padding:1em;
+            background: black;
+            color:white;
+            min-height: 4rem;
+            position: fixed;
+            z-index: 1;
+            -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+        }
+        .cabeceraHome>div{
+            width: auto;
+            padding: 1.5em;
+            position: fixed;
+            background: black;
+            left: 0;
+            -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+        }
+        .cabeceraHome>div:after{
+            content: ".";
+            font-size: 0;
+            right: -8.7rem;
+            bottom: 3.6rem;
+            border-top: 14rem solid transparent;
+            border-left: 16rem solid black;
+            z-index: -1;
+            text-transform: rotate(45deg);
+            -ms-transform: rotate(7deg);
+            -webkit-transform: rotate(7deg);
+            transform: rotate(-45deg);
+            position: absolute;
+            -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+        }
+        .navegadorHome{
+            position: inherit;
+            bottom: 0;
+            padding: 0;
+            width: 100%;
+            background: none;
+            -webkit-box-shadow:none;
+            -moz-box-shadow:none;
+            box-shadow:none;
+        }
+        .btnHome{
+            position: relative;
+            display: block;
+            margin: 20% auto;
+            width: calc(70% - 30px);
+            padding: 75px 15px 0;
+            text-align: center;
+            height: 6rem;
+            background: black;
+            vertical-align: bottom;
+            -webkit-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+        }
+        .btnHome:after {
+            content: "▲";
+            color: black;
+            font-size: 15.8rem;
+            position: absolute;
+        }
+        .btnHome:nth-of-type(1):after {
+            transform: scale(0.5,1) rotate(-90deg);
+            left: -10.4rem;
+            top: -3.7rem;
+            text-shadow: -19px 20px 20px rgba(0,0,0,0.7);
+        }
+        .btnHome:nth-of-type(2):after {
+            transform: scale(0.5,1) rotate(90deg);
+            right: -10.4rem;
+            top: -3.7rem;
+            text-shadow: 17px -9px 20px rgba(0,0,0,0.7);
+        }
+        .btnHome:nth-of-type(3):after {
+            content: "▼";
+            left: calc(50% - 7.8rem);
+            bottom: -185px;
+            transform: scale(1,0.5);
+            text-shadow: -6px 20px 20px rgba(0,0,0,0.5);
+        }
+        .btnHome.hover{
+            background: transparent;
+            color: black;
+        }
+        #items{
+            overflow-x: scroll;
+            width: 100%;
+            white-space: nowrap;
+            background: honeydew;
+        }
+        .item {
+            display: inline-block;
+            width: 100%;
+            vertical-align: bottom;
+            height: calc(100vh - 18rem);
+            padding-top: 18rem;
+            text-align: center;
+            overflow-x: hidden;
+            z-index: 2;
+            background: transparent;
+        }
+        .segundoMenuHome{
+            width: 100%;
+            padding-top: 3rem;
+            position: relative;
+            transition: width 0.5s;
+            overflow:hidden;
+        }
+        .segundoMenuHome>div{
+            margin: 5px 0 5px;
+            background: black;
+            color: white;
+            width: auto;
+            max-width: 100%;
+            padding: 75px 25px;
+            text-align: left;
+            text-indent: 3rem;
+            -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
+        }
+        .segundoMenuHome.menuContratar{
+            float:right;
+        }
+        .segundoMenuHome.menuContratar>div{
+            float:right;
+            clear: right;
+            padding: 75px 0px 75px 50px;
+            text-indent: 0;
+        }
+        .resumen nav{
+            height: calc(100vh - 30rem);
+        }
+        .segundoMenuHome>div{
+            width:0;
+            overflow: hidden;
+        }
+        .segundoMenuHome>div.active{
+            transition: width 1s ease-out, padding 1s ease-out;
+        }
+        .segundoMenuHome.menuContratar>div.active{
+            padding:75px 100px 75px 0;
+            text-align:center;
+            text-align: right;
+        }
+        .segundoMenuHome.menuContratar>div.active:nth-of-type(1){
+            width:50%
+        }
+        .segundoMenuHome.menuContratar>div.active:nth-of-type(2){
+            width: 60%;
+        }
+        .segundoMenuHome.menuContratar>div.active:nth-of-type(3){
+            width: 70%;
+        }
+        .segundoMenuHome.menuContratar>div.active:nth-of-type(4){
+            width: 80%;
+        }
+        .segundoMenuHome>div.active:nth-of-type(1){
+            width:50%;
+        }
+        .segundoMenuHome>div.active:nth-of-type(2){
+            width:60%;
+        }
+        .segundoMenuHome>div.active:nth-of-type(3){
+            width:70%;
+        }
+        .segundoMenuHome>div.active:nth-of-type(4){
+            width:80%;
+        }
+        /*test*/
+        body {
+            background: #99B0aa;
+            overflow: auto;
+        }
 
-    #items{
-    overflow-x: scroll;
-    width: 100%;
-    white-space: nowrap;
-     background: black;
-  }
-  .item {
-    display: inline-block;
-    width: 100%;
-    vertical-align: bottom;
-    height: calc(100vh - 18rem);
-    padding-top: 18rem;
-    text-align: center;
-    background:white;
-}
 
-.segundoMenuHome{
-    width: 100%;
-    padding-top: 3rem;
-    transition: width 0.5s;
-    overflow:hidden;
-}
-.segundoMenuHome>div{
-       margin: 5px 0 5px;
-    background: black;
-    color: white;
-    width: auto;
-    max-width: 100%;
-    padding: 75px 25px;
-    text-align: left;
-    text-indent: 3rem;
-    -webkit-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 7px 5px 20px 0px rgba(0,0,0,0.75);
-}
-.segundoMenuHome.menuContratar{
-    float:right;
-}
-.segundoMenuHome.menuContratar>div{
-    float:right;
-    clear: right;
-        padding: 75px 0px 75px 50px;
-    text-indent: 0;
-}
-.segundoMenuHome>div{
-    width:0;
-    transition: width 1s ease-out, padding 1s ease-out;
-}
-.segundoMenuHome.menuContratar>div.active{
-    padding:75px 100px 75px 0;
-    text-align:center;
-}
-.segundoMenuHome.menuContratar>div.active:nth-of-type(1){
-    width:calc(50% - 25px);
-    padding-left:25px;
-}
-.segundoMenuHome.menuContratar>div.active:nth-of-type(2){
-    width:calc(50% - 25px);
-    padding-left:calc(10% + 25px);
-}
-.segundoMenuHome.menuContratar>div.active:nth-of-type(3){
-    width:calc(50% - 25px);
-    padding-left:calc(20% + 25px);
-}
-.segundoMenuHome.menuContratar>div.active:nth-of-type(4){
-    width:calc(50% - 25px);
-    padding-left:calc(30% + 25px);
-}
-.segundoMenuHome>div.active:nth-of-type(1){
-    width:50%;
-}
-.segundoMenuHome>div.active:nth-of-type(2){
-    width:60%;
-}
-.segundoMenuHome>div.active:nth-of-type(3){
-    width:70%;
-}
-.segundoMenuHome>div.active:nth-of-type(4){
-    width:80%;
-}
+        .hg-twirl{
+            list-style: none;
+            position: absolute;
+            top: 30%;
+            left: 11%;
+            transform-origin: 400px;
+            transform-style: preserve-3d;
+            animation: spin 200s linear infinite;
+            opacity: 1;
+            pointer-events: none;
+        }
+        @keyframes spin {
+            100%{transform: rotateY(360deg);}
+        }
 
+        .hg-twirl li{
+            pointer-events: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            border-radius: 0;
+            width: 800px;
+            height: 800px;
+            animation: nips 11s linear infinite;
+            transition:border-radius 0.6s ease-out;
+        }
+        .hg-twirl.circulo li{
+            border-radius: 50%;
+
+        }
+        @keyframes nips{
+            0%{opacity:0.9;}
+            33%{opacity:0.65}
+            55%{opacity:0.33;}
+            100%{opacity:0.9;}
+        }
+
+
+        .hg-twirl li{
+            animation-delay: 1.77s;
+            margin-top: 3px;
+            box-shadow: 0 0 0 0 #a27216 inset, 6px 0 0 #a27216 inset, 0 0 0 9px #a27216 inset, 0 0 0 0 #a27216 inset;
+            transform: rotateY(360deg);
+        }
+
+        /*test*/
+        .resumen{
+            overflow-y: scroll;
+        }
+
+        .resumen h2{
+            text-align: center;
+            width: auto;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .resumen p{
+            text-align: left;
+        }
+        .nuevoRes{
+            width: 100%;
+            text-align: left;
+            white-space: initial;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        .nuevoRes p {
+            text-align: justify;
+        }
+        .botonResumen {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        #collapse1, #collapse2, #collapse3{
+            margin-top: 50px;
+            padding: 0 3.5rem;
+        }
+        .mostrarResumen{
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <div class="cabeceraHome"><div><h1>Foo Bar Dual</h1></div></div>
-    <div class="contenido">
-        <div id="items">
-           <div class="item estudiar">
-             <h2>QUIERES ESTUDIAR?</h2>
-             <div class="segundoMenuHome menuEstudiar">
-             <div><a>¿COMO ACCEDER?</a></div>
-             <div><a>¿COMO FUNCIONA?</a></div>
-             <div><a>¿DONDE TRABAJARAS?</a></div>
-             <div><a>¿DE QUE TRABAJARAS?</a></div>
-             </div>
-           </div>
-           <div class="item resumen">
-             <h2>RESUMEN</h2>
-           </div>
-           <div class="item contratar">
-             <h2>QUIERES CONTRATAR</h2>
-             <div class="segundoMenuHome menuContratar">
-             <div><a>¿COMO ACCEDER?</a></div>
-             <div><a>¿COMO FUNCIONA?</a></div>
-             <div><a>¿DONDE TRABAJARAS?</a></div>
-             <div><a>¿DE QUE TRABAJARAS?</a></div>
-             </div>
-           </div>
+<div class="cabeceraHome"><div><h1>Foo Bar Dual</h1></div></div>
+<div class="contenido">
+    <div id="items">
+        <div class="hg-twirl">
+            <li></li>
+        </div>
+        <div class="item estudiar">
+            <h2>QUIERES ESTUDIAR?</h2>
+            <div class="segundoMenuHome menuEstudiar">
+                <div><a>¿COMO ACCEDER?</a></div>
+                <div><a>¿COMO FUNCIONA?</a></div>
+                <div><a>¿DONDE TRABAJARAS?</a></div>
+                <div><a>¿DE QUE TRABAJARAS?</a></div>
+            </div>
+        </div>
+        <div class="item resumen">
+            <div class="navegadorHome"><nav><div class="btnHome" onclick="goEstudiar()"><span>Quieres Estudiar?</span></div><div class="btnHome" onclick="goContratar()"><span>Quieres Contratar?</span></div><div class="btnHome" onclick="goVerticalResumen()"><span>Resumen</span></div></nav></div>
+            <div class="nuevoRes"><div class="item resumen">
+                <h2>RESUMEN</h2>
+                <!--<h2 onclick="toggleChildren('collapse1')">¿quiénes somos?</h2>-->
+                <div id="collapse1">
+                    <input type="button" class="botonResumen" onclick="toggleChildren('collapse1')" value="¿quiénes somos?">
+                    <p class="mostrarResumen">Estos son los <a href="objetivos">objetivos</a> usteer pecador qué dise usteer tiene musho peligro.
+                        La <a href="formacion">formación</a> que van a recibir los estudiantes. pitaa quietooor mamaar papaar papaar
+                        apetecan. No te digo trigo por no llamarte
+                        Rodrigor caballo blanco caballo negroorl caballo blanco caballo negroorl ese pedazo de. Sexuarl te va a
+                        <a href="../pages/de_que_trabajaras.html#perfiles_desempenados">desarrollo en la empresa</a> aquerl diodeno
+                        a wan. Caballo blanco caballo negroorl de la pradera pecador a
+                        <a href="../pages/experiencias.html">experiencias</a> a peich no puedor diodeno. Llevame al sircoo llevame al
+                        sircoo ahorarr fistro a peich no te digo
+                        trigo por no llamarte Rodrigor diodeno diodeno me cago en tus muelas. Diodeno sexuarl no te digo trigo
+                        por no llamarte Rodrigor tiene musho <a href="../pages/como_acceder.html">acceso al ciclo</a> Fistro
+                        benemeritaar ese pedazo de llevame al sircoo te voy
+                        a borrar el cerito la caidita.</p>
+                </div>
+                <div id="collapse2">
+                    <input type="button" class="botonResumen" onclick="toggleChildren('collapse2')" value="¿qué hacemos?">
+                    <!--<h2 onclick="toggleChildren('collapse2')">¿qué hacemos?</h2>-->
+                    <p class="mostrarResumen">Lorem <a href="../pages/donde_trabajaras.html">salidas</a> ese pedazo de ese hombree qué dise usteer pecador qué
+                        dise usteer tiene musho peligro.
+                        Amatomaa <a href="../pages/como_funciona.html#calendario">duración</a> va a hasé pupitaa quietooor mamaar papaar
+                        papaar apetecan. No te digo trigo por no llamarte
+                        <a href="../pages/que_aprenderas.html">módulos</a> caballo blanco caballo negroorl caballo blanco caballo
+                        negroorl ese pedazo de. Sexuarl te va a
+                        <a href="../pages/que_perfiles_ofrecemos.html#proyectos_del_alumnado">como se hizo FBD Y PFC</a> a wan. Caballo
+                        blanco caballo negroorl de la pradera pecador a
+                        no puedor diodeno. Llevame al sircoo llevame al sircoo ahorarr fistro a peich no te digo
+                        trigo por no llamarte Rodrigor diodeno diodeno me cago en tus muelas. <a href="../pages/graficas">gráficas</a> o
+                        te digo trigo
+                        por no llamarte Rodrigor tiene musho peligro. Fistro benemeritaar ese pedazo de llevame al sircoo te voy
+                        a borrar el cerito la caidita.</p>
+                </div>
+                <div id="collapse3">
+                    <!--<h2 onclick="toggleChildren('collapse3')">¿cómo lo hacemos?</h2>-->
+                    <input type="button" class="botonResumen" onclick="toggleChildren('collapse3')" value="¿cómo lo hacemos?">
+                    <p class="mostrarResumen">Lorem fistrum ese pedazo de ese <a href="../pages/como_contratar.html">contrato</a> qué dise usteer pecador qué
+                        dise usteer tiene musho peligro.
+                        Amatomaa te va a hasé pupitaa quietooor mamaar papaar papaar apetecan. No te digo trigo por no llamarte
+                        Rodrigor caballo blanco caballo negroorl caballo <a
+                                href="../pages/de_que_trabajaras.html#perfiles_desempenados">prácticas</a> caballo negroorl ese pedazo
+                        de. Sexuarl te va a
+                        hasé pupitaa apetecan al ataquerl diodeno a wan. Caballo blanco caballo negroorl de la pradera pecador a
+                        peich a peich no puedor diodeno. Llevame al sircoo <a href="../pages/que_derechos_y_obligaciones_tendras.html">obligaciones</a>
+                        sircoo ahorarr fistro a peich no te digo
+                        trigo por no llamarte Rodrigor diodeno diodeno me cago en tus muelas. Diodeno sexuarl no te digo trigo
+                        por no llamarte Rodrigor tiene musho peligro. Fistro benemeritaar ese pedazo de llevame al sircoo te voy
+                        a borrar el cerito la caidita.</p>
+                </div>
+            </div></div>
+        </div>
+        <div class="item contratar">
+            <h2>QUIERES CONTRATAR</h2>
+            <div class="segundoMenuHome menuContratar">
+                <div><a>¿COMO ACCEDER?</a></div>
+                <div><a>¿COMO FUNCIONA?</a></div>
+                <div><a>¿DONDE TRABAJARAS?</a></div>
+                <div><a>¿DE QUE TRABAJARAS?</a></div>
+            </div>
         </div>
     </div>
-    <div class="navegadorHome"><nav><div class="btnHome" onclick="goEstudiar()"><span>Quieres Estudiar?</span></div><div class="btnHome" onclick="goResumen()"><span>Resumen</span></div><div class="btnHome" onclick="goContratar()"><span>Quieres Contratar?</span></div></nav></div>
+</div>
+
 </body>
 <script type="text/javascript">
-
-var botones = document.getElementsByClassName("btnHome");
-
-function scrollTo(element, to, duration) {
-    if (duration <= 0) return;
-    var difference = to - element.scrollLeft;
-    var perTick = difference / duration * 10;
-
-    setTimeout(function() {
-        element.scrollLeft = element.scrollLeft + perTick;
-        if (element.scrollLeft === to) return;
-        scrollTo(element, to, duration - 10);
-    }, 10);
-} 
+    var botones = document.getElementsByClassName("btnHome");
+    function scrollTo(element, to, duration, direction) {
+        if (duration <= 0) return;
+        var difference = to - element[direction];
+        var perTick = difference / duration * 10;
+        setTimeout(function() {
+            element[direction] = element[direction] + perTick;
+            if (element[direction] === to) return;
+            scrollTo(element, to, duration - 10, direction);
+        }, 10);
+    }
     var objDiv = document.getElementById("items");
-
     var goEstudiar = function(){
-    seleccionarBtnScroll(0);
-    scrollTo(objDiv, 0 , 300);}
-    
+        scrollTo(objDiv, 0 , 200,"scrollLeft");}
+
     var goResumen = function(){
-    seleccionarBtnScroll(1);
-    scrollTo(objDiv, (window.innerWidth+3) , 300);}
-    
+        scrollTo(objDiv, (window.innerWidth+4) , 200,"scrollLeft");}
+
     var goContratar = function(){
-    seleccionarBtnScroll(2);
-    scrollTo(objDiv, window.innerWidth*3 , 300);}
-
+        scrollTo(objDiv, window.innerWidth*3 , 200,"scrollLeft");}
     var delayedExec = function(after, fn) {
-    var timer;
-    return function() {
-        timer && clearTimeout(timer);
-        timer = setTimeout(fn, after);
+        var timer;
+        return function() {
+            timer && clearTimeout(timer);
+            timer = setTimeout(fn, after);
+        };
     };
-};
-
-var seleccionarBtnScroll = function(num){
-for(var i = 0; i<botones.length;i++){
-    botones[i].className = "btnHome"
-}
-    botones[num].className += " hover";
-    
-}
-
-var desplegarOpciones = function(elm, newClass){
-    for(var i = 0; i<elm.children.length; i++){
-        elm.children[i].className = newClass;
+    var desplegarOpciones = function(elm, newClass, newAnimationClass){
+        for(var i = 0; i<elm.children.length; i++){
+            elm.children[i].className = newClass;
+            document.getElementsByClassName("hg-twirl")[0].className="hg-twirl "+newAnimationClass
+        }
     }
-}
+    var scrollStopper = delayedExec(500, function() {
+        if(objDiv.scrollLeft-(window.innerWidth/2)<0){
+            goEstudiar(0);
+            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "active", "circulo");
+            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "circulo");
+        }
+        else if(objDiv.scrollLeft-(window.innerWidth*1.5)> 0){
+            goContratar(2);
+            desplegarOpciones(document.getElementsByClassName("menuContratar")[0],"active", "circulo");
+            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "circulo");
+        }
+        else{
+            goResumen(1);
+            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "");
+            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "");
+        }
+    });
+    var resumContent = document.getElementsByClassName("resumen")[0];
 
-var scrollStopper = delayedExec(500, function() {
-    if(objDiv.scrollLeft-(window.innerWidth/2)<0){
-       goEstudiar(0);
-       desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "active");
-       desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "");
-    }
-    else if(objDiv.scrollLeft-(window.innerWidth*1.5)> 0){
-        goContratar(2);
-        desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "");
-        desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "active");
-    }
-    else{
-        goResumen(1);
-        desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "");
-        desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "");
-    }
-});
 
+    var goVerticalResumen = function(){
+        scrollTo(resumContent, (window.outerHeight*2) , 300,"scrollTop");}
+
+
+    var verticalScrollStopper = delayedExec(500, function() {
+        if(resumContent.scrollTop<(window.outerHeight*2)){
+            if((window.outerHeight-resumContent.scrollTop)>0){
+                scrollTo(resumContent, 0 , 300,"scrollTop");
+                document.getElementsByClassName("hg-twirl")[0].className="hg-twirl"}
+            else{
+                scrollTo(resumContent, (window.outerHeight*2.3) , 300,"scrollTop");
+                document.getElementsByClassName("hg-twirl")[0].className="hg-twirl circulo"
+            }}
+        else{
+            document.getElementsByClassName("hg-twirl")[0].className="hg-twirl circulo"
+        }
+    });
     objDiv.addEventListener('scroll', scrollStopper);
+    resumContent.addEventListener('scroll', verticalScrollStopper);
+    //    logica resumen
 
+    function toggleChildren(id) {
+        var elem = document.getElementById(id);
+        var child = elem.lastElementChild;
 
-window.onload = function() {
-  goResumen();
-  console.log(document.getElementById("items"));
-  console.log(document.getElementById("items").style.width);
-   document.getElementById("items").style.width= window.innerWidth + "px";
-  console.log(document.getElementById("items").style.width);  
-  console.log(window.innerWidth);
-};
+        if (!elem || !child) {
+            alert("error: no se ha encontrado el elemento")
+        } else {
+            if (child.style.display == "" || child.style.display == "none") {
+                child.style.display = "block";
+            } else {
+                child.style.display = "none";
+            }
+        }
+    }
+    window.onload = function() {
+        goResumen();
+//        document.getElementById("items").style.width= window.innerWidth + "px";
+    };
 </script>
 </html>
