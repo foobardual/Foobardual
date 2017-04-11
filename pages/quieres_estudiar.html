@@ -7,117 +7,380 @@
     <script type="text/javascript" src="../js/header.js"></script>
 </head>
 <body>
-    <header>
-        <h1>¿quieres estudiar?</h1>
+<header>
+    <div>
         <div>
-            <div>
-                <button onclick="desplegarMenu()">Menu</button>
-                <div class="menu">
-                    <a href="index.html#quieres_estudiar">¿Quieres estudiar?</a>
-                    <ul>
-                        <li><a href="como_acceder.html">¿Como acceder?</a></li>
-                        <li><a href="como_funciona.html">¿Como funciona?</a></li>
-                        <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
-                        <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
-                    </ul>
-                </div>
-            </div>
-            <a href="../index.html">FooBar Dual</a>
-            <div class="buscar">
-                <input type="text" placeholder="buscar" />
+            <button onclick="desplegarMenu()">Menu</button>
+            <div class="menu">
+
+                <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Quieres estudiar?</span>
+                <ul>
+                    <li><a href="#" onclick="seccionesBGColor('#FFFFFF')">¿Cómo acceder?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#80DEEA')">¿Cómo funciona?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#FFF59D')">¿Dónde trabajarás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿De qué trabajarás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué aprenderás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué derechos y obligaciones tendrás?</a></li>
+                </ul>
+
+                <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Contratar?</span>
+                <ul>
+                    <li><a href="#" onclick="seccionesBGColor('#6CA299')">¿Qué perfiles ofrecemos?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#D4AE6A')">¿Cómo contratar?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#CC6672')">Experiencias</a></li>
+                </ul>
             </div>
         </div>
-    </header>
-    <main class="container">
-        <section id="como_acceder">
-            <h2><a href="como_acceder.html">como acceder</a></h2>
+        <a href="index.html">FooBar Dual</a>
+        <h1>¿Quieres estudiar?</h1>
+        <div class="buscar">
+            <input type="text" placeholder="buscar"/>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <article id="como_acceder">
+        <h2>Cómo acceder</h2>
+        <section id="tarjeta_desempleo">
+            <h3>Tarjeta de desempleo</h3>
+            <div class="contents">
+                <p>Has de estar inscrito como demandante de empleo en el SOIB, es decir, disponer de tu tarjeta de
+                    demanda
+                    de empleo DARDE, y debe estar al día.</p>
+            </div>
         </section>
-        <section id="como_funciona">
-            <h2><a href="como_funciona.html">como funciona</a></h2>
+        <section id="acceso_estudios">
+            <h3>Acceso a los estudios</h3>
+            <div class="contents">
+                <p> Como se trata de un ciclo de grado superior, además debes satisfacer uno de los siguientes
+                    requisitos:</p>
+                <ul>
+                    <li>Disponer de tu Título de Bachiller, o de un certificado acreditativo de haber superado todas las
+                        materias del Bachillerato.
+                    </li>
+                    <li>Haber superado el segundo curso de cualquier modalidad de Bachillerato experimental.
+                        Estar en posesión de un Título de Técnico (Formación Profesional de Grado Medio).
+                    </li>
+                    <li>Estar en posesión de un Título de Técnico Superior, Técnico Especialista o equivalente a efectos
+                        académicos.
+                    </li>
+                    <li>Haber superado el Curso de Orientación Universitaria (COU).</li>
+                    <li>Estar en posesión de cualquier Titulación Universitaria o equivalente.</li>
+                    <li>Haber superado la prueba de acceso a ciclos formativos de grado superior (se requiere tener al
+                        menos
+                        19 años en el año que se realiza la prueba o 18 para quienes poseen el título de Técnico).
+                    </li>
+                    <li>Haber superado la prueba de acceso a la Universidad para mayores de 25 años.</li>
+                </ul>
+            </div>
         </section>
-        <section id="donde_trabajaras">
-            <h2><a href="donde_trabajaras.html">donde trabajaras</a></h2>
+        <section id="normativa">
+            <h3>Normativa</h3>
+            <div class="contents">
+                <h4>Normativa autonomica</h4>
+                <p>Resolució del conseller d’Educació i Universitat de 27 de maig de 2016 per la qual s’aproven les
+                    instruccions per a l’organització i el funcionament dels programes formatius de formació
+                    professional
+                    del sistema educatiu que s’han d’impartir durant el curs 2016-2017 en la modalitat d’alternança amb
+                    l’activitat a l’empresa, anomenada formació professional dual (02/06/2016)</p>
+                <h4>Normativa estatal</h4>
+                <p>Real Decreto 1529/2012, de 8 de noviembre, por el que se desarrolla el contrato para la formación y
+                    el
+                    aprendizaje y se establecen las bases de la formación profesional dual.
+                <p>
+                <p>pPDF Orden ESS/2518/2013, de 26 de diciembre, por la que se regulan los aspectos formativos del
+                    contrato
+                    para la formación y el aprendizaje, en desarrollo del Real Decreto 1529/2012, de 8 de noviembre, por
+                    el
+                    que se desarrolla el contrato para la formación y el aprendizaje y se establecen las bases de la
+                    formación profesional dual.</p>
+                <p>PDF LEY 43/2006, de 29 de diciembre,para la mejora del crecimiento y del empleo. Artículo 6.
+                    Exclusiones.
+                    Las bonificaciones previstas en este Programa no se aplicarán en los siguientes supuestos.</p>
+                <p>PDF Estatuto de los trabajadores. Artículo 11. Contratos formativos.</p>
+            </div>
         </section>
-        <section id="de_que_trabajaras">
-            <h2><a href="de_que_trabajaras.html">de que trabajaras</a></h2>
+
+        <section id="limites_edad">
+            <h3>Limites de edad</h3>
+            <div class="contents">
+                <p>Debes tener más de 16 años y no cumplir los 29 este año. Este límite máximo de edad no es aplicable
+                    cuando se trate de personas con discapacidad.</p>
+            </div>
         </section>
-        <section id="experiencias">
-            <h2><a href="experiencias.html">experiencias</a></h2>
+
+        <section id="empadronamiento">
+            <h3>Empadronamiento</h3>
+            <div class="contents">
+                <p>tu domicilio de residencia ha de estar fijado en las Islas Baleares con una antigüedad mínima de 2
+                    años,
+                    es decir, estar empadronado aquí desde hace al menos 2 años</p>
+            </div>
         </section>
-    </main>
-    <footer>
-        <nav class="nav" role="navigation">
-            <ul class="nav__list">
 
-                <li>
-                    <input id="group-1" type="checkbox" hidden />
-                    <label for="group-1"><h4>¿Quieres estudiar?</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li><a href="como_acceder.html">¿Cómo acceder?</a></li>
-                        <li><a href="como_funciona.html">¿Cómo funciona?</a></li>
-                        <li><a href="donde_trabajaras.html">¿Dónde trabajarás?</a></li>
-                        <li><a href="de_que_trabajaras.html">¿De qué trabajarás?</a></li>
-                    </ul>
-                </li>
+        <section id="plazas_ofertadas">
+            <h3>plazas ofertadas</h3>
+            <div class="contents">
+                <p>Mínimo 15 hasta un máximo de 25.</p>
+                <h4>Propuestas de idoneidad</h4>
+                <p>Pueden presentar la solicitud de admisión para cursar ciclos formativos de formación profesional
+                    dual,
+                    con carácter preferente al resto de solicitantes para cursar esta formación, las personas que
+                    presenten
+                    una propuesta de idoneidad de empresa para llevar a cabo la formación profesional dual que tenga el
+                    visto bueno del centro educativo como empresa idónea para la realización de la formación profesional
+                    dual, además de reunir los requisitos de acceso establecidos en estas Instrucciones.</p>
+                <h4>Compromisos de participacion</h4>
+                <p>Antes del 30 de junio, con la finalidad de optimizar la organización de la formación, el centro
+                    educativo
+                    autorizado para impartir ciclos formativos en la modalidad dual tiene que enviar a la Dirección
+                    General
+                    de Formación Profesional y Formación del Profesorado, vía correo electrónico y con copia a la Cámara
+                    de
+                    Comercio, los compromisos de participación de las empresas. El centro educativo se tiene que
+                    coordinar
+                    con la Cámara de Comercio con el fin de favorecer la participación de las empresas en el desarrollo
+                    del
+                    curso escolar.</p>
+            </div>
+        </section>
 
+        <section id="proceso_admision">
+            <h3>Proceso de admision</h3>
+            <div class="contents">
+                <p>Presentar la sol·licitud d'admissió degudament emplenada, juntament amb la documentació necessària,
+                    únicament en el centre educatiu en el qual vull cursar la formació professional dual.</p>
+                <h4>Documentación</h4>
+                <h4>Admisión</h4>
+                <ul>
+                    <li>
+                        <a href="http://www.caib.es/sites/fp/ca/documentacio-81918/archivopub.do?ctrl=MCRST14ZI208187&id=208187">Model
+                            de declaració jurada per a l'admissió a FP dual (català)</a></li>
+                    <li>
+                        <a href="http://www.caib.es/sites/fp/ca/documentacio-81918/archivopub.do?ctrl=MCRST14ZI208188&id=208188">Model
+                            de declaració jurada per a l'admissió a FP dual (castellà)</a></li>
+                    <li>
+                        <a href="http://www.caib.es/sites/fp/ca/documentacio-81918/archivopub.do?ctrl=MCRST14ZI202990&id=202990">Sol·licitud
+                            proposta idoneïtat empresa (català)</a></li>
+                    <li>
+                        <a href="http://www.caib.es/sites/fp/ca/documentacio-81918/archivopub.do?ctrl=MCRST14ZI202991&id=202991">Sol·licitud
+                            proposta idoneïtat empresa (castellà)</a></li>
+                </ul>
+                <h4>Conformitat amb L'FP Dual</h4>
+                <p>
+                    <a href="http://www.caib.es/sites/fp/ca/documentacio-81918/archivopub.do?ctrl=MCRST14ZI196727&id=196727">Model
+                        de declaració jurada</a></p>
+            </div>
+        </section>
 
-                <li>
-                    <input id="group-2" type="checkbox" hidden />
-                    <label for="group-2"><h4>¿Quieres contratar?</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li><a href="que_perfiles_ofrecemos.html">¿Qué perfiles ofrecemos?</a></li>
-                        <li><a href="">Guía de contratación</a></li>
-                        <li><a href="experiencias.html">Experiencias</a></li>
-                    </ul>
-                </li>
+        <section id="becas_ayudas">
+            <h3>becas y ayudas</h3>
+            <div class="contents">
+                <p>No aplica</p>
+            </div>
+        </section>
+    </article>
 
+    <article id="como_funciona">
+        <h2>Cómo funciona</h2>
 
-                <li>
-                    <input id="group-3" type="checkbox" hidden />
-                    <label for="group-3"><h4>Contacto</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li class="details">Teléfono del centro: 971278150</li>
-                        <li class="details">Fax del centro: 971278155</li>
-                        <li class="details">Email: test@test.com</li>
-                    </ul>
-                </li>
+        <section id="calendario">
+            <h3>Calendario</h3>
+            <div class="contents">
+                <h4>Escolar</h4>
+                <p>Vacaciones escolares y laborales
+                    1. El periodo de vacaciones escolares en las actividades formativas desarrolladas en el centro
+                    educativo viene determinado en la normativa que establece el calendario escolar anual para los
+                    centros docentes no universitarios de la Comunidad Autónoma de las Illes Balears.</p>
+                <h4>Laboral</h4>
+                <p>El periodo de vacaciones laborales viene determinado en el contrato de trabajo firmado, de acuerdo
+                    con la normativa laboral vigente. Estos dos plazos de descanso o vacaciones no tienen necesariamente
+                    coincidencia temporal.</p>
+            </div>
+        </section>
 
+        <section id="temporalizacion">
+            <h3>Temporalización</h3>
+            <div class="contents">
+                <p>La formación profesional dual se tiene que estructurar en dos cursos académicos.</p>
+                <p>La distribución horaria semanal tiene que ser, con carácter general, de 15 horas semanales en el
+                    centro educativo de forma presencial, completada con contenidos y actividades a distancia, junto con
+                    25 horas semanales de formación-trabajo en la empresa. No se pueden superar en el cómputo semanal
+                    las 40 horas entre formación y trabajo efectivo.</p>
+            </div>
+        </section>
 
-                <li>
-                    <input id="group-4" type="checkbox" hidden />
-                    <label for="group-4"><h4>Localización</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li class="details">Calle Caracas, 6 (Polígono de Llevant)</li>
-                        <li class="details">07007 Palma de Mallorca (Illes Balears)</li>
-                        <li id="map" class="details" center>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1220.548371809852!2d2.6672159280331953!3d39.56887675907247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55bc574de040df4a!2sIES+Francesc+de+Borja+Moll!5e0!3m2!1ses!2ses!4v1487691882597"
-                                    width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </li>
-                    </ul>
-                </li>
+        <section id="Proceso_seleccion_empresa">
+            <h3>Proceso de selección de la empresa</h3>
+            <div class="contents">
+                <p>Los departamentos de RRHH de las empresas participantes diseñan el proceso de selección una vez
+                    conocen los candidatos/as propuestos por el IES.</p>
+            </div>
+        </section>
 
+        <section id="Horarios">
+            <h3>horarios</h3>
+            <div class="contents">
+                <h4>IES</h4>
+                <p>De 15:45h a 18:30h de lunes a viernes</p>
+                <h4>Empresa</h4>
+                <p>5 horas diarias en una franja horaria que no coincida con la de asistencia al IES.</p>
+            </div>
+        </section>
 
-                <li>
-                    <input id="group-5" type="checkbox" hidden />
-                    <label for="group-5"><h4>Horario general del centro</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li>Mañana: 8:00h a 15:00h</li>
-                        <li>Tarde: 15:45h a 21:30h</li>
-                    </ul>
-                </li>
+        <section id="asignacion_estudiante_empresa">
+            <h3>asignación estudiante empresa</h3>
+            <p>El departamento de la familia profesional, junto con el equipo directivo y el profesorado del módulo de
+                Formación y Orientación Laboral tienen que establecer los criterios de asignación de los alumnos en las
+                empresas. También son los responsables de la asignación de cada uno de los alumnos en las empresas
+                participantes.</p>
+            <div class="contents"></div>
+        </section>
 
+        <section id="contrato_formacion">
+            <h3>contrato para la formación y el aprendizaje</h3>
+            <div class="contents">
+                <p>El contrato para la formación y el aprendizaje tiene por objeto la cualificación profesional de los
+                    trabajadores, en un régimen de alternancia de actividad laboral retribuida en una empresa, con
+                    actividad formativa recibida en el marco del sistema de formación profesional para el empleo o del
+                    sistema educativo.</p>
+                <p>Este es un instrumento destinado a favorecer la inserción laboral de los jóvenes. Tiene por objeto la
+                    cualificación profesional de los trabajadores en un régimen de alternancia de actividad laboral
+                    retribuida en una empresa.</p>
+                <p>La actividad formativa se recibe en el marco del sistema de formación profesional para el empleo
+                    (Certificados de profesionalidad) o del sistema educativo (Título de Formación Profesional)</p>
+            </div>
+        </section>
+    </article>
+    <article id="donde_trabajaras">
+        <h2>donde trabajaras?</h2>
+        <section id="empresas_participantes">
+            <h3>Empresas participantes</h3>
+            <div class="contents">
 
-                <li>
-                    <input id="group-6" type="checkbox" hidden />
-                    <label for="group-6"><h4>Horario secretaria</h4><span class="rotate">+</span></label>
-                    <ul class="group-list">
-                        <li>Mañana: 10:00h a 13:00h (de lunes a viernes)</li>
-                        <li>Tarde: Solo los Martes de 16:00h a 20:00h</li>
-                    </ul>
-                </li>
+                <h4>Company Size</h4>
+                <p>Fewer than 10 employees 9.8%</p>
+                <p>10 to 19 employees 10.5%</p>
+                <p>20 to 99 employees 22.1%</p>
+                <p>100 to 499 employees 18.7%</p>
+                <p>500 to 999 employees</p>
 
-            </ul>
-        </nav>
-    </footer>
+                <h4>Tipo de compañía</h4>
+                <p>Privately-held limited company, not in startup mode 43.0%</p>
+                <p>Publicly-traded corporation 15.1%</p>
+                <p>I don't know 8.3%</p>
+                <p>Sole proprietorship or partnership, not in startup mode 7.3%</p>
+                <p>Government agency or public school/university 6.3</p>
+
+                <ul>
+                    <li>2015
+                        <ul>
+                            <li><a href="http://www.brujula.es/">Brujula</a></li>
+                            <li>
+                                <a href="http://www.informa.es/directorio-empresas/Empresa_KUMO-CONSULTORIA.html">Kumo</a>
+                            </li>
+                            <li><a href="http://www.dome-consulting.com/">Dome</a></li>
+                            <li><a href="http://www.idiso.com/es/index.html">Idiso</a></li>
+                            <li><a href="https://www.xmltravelgate.com/">XML Travelgate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="informacion_de_contacto">
+            <h3>información de contacto</h3>
+            <div class="contents">
+                <p>No aplica</p>
+            </div>
+        </section>
+        <section id="sector_ambito">
+            <h3>sector/Ambito</h3>
+            <div class="contents">
+                <h4>Desglose de la industria</h4>
+                <p>Software 28.2%</p>
+                <p>Internet or Web services 14.3%</p>
+                <p>Finance, banking, or insurance 8.5%</p>
+                <p>Media, advertising, publishing, or entertainment 4.9%</p>
+                <p>Other 4.5%</p>
+                <p>Consulting 4.3%</p>
+            </div>
+        </section>
+        <section id="graficas">
+            <h3><a href="graficas.html">Gráficas</a></h3>
+            <div class="contents">
+                <p>Si prefieres visualizar las estadísticas de estos 5 años de programa Dual.</p>
+            </div>
+        </section>
+    </article>
+    <section id="de_que_trabajaras">
+        <h2><a href="de_que_trabajaras.html">de que trabajaras</a></h2>
+    </section>
+    <section id="experiencias">
+        <h2><a href="experiencias.html">experiencias</a></h2>
+    </section>
+</main>
+<footer>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <input id="group-1" type="checkbox" hidden/>
+                <label class="group-1" for="group-1"><h4>¿Quieres estudiar?</h4><span class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li><a href="como_acceder.html">¿Cómo acceder?</a></li>
+                    <li><a href="como_funciona.html">¿Cómo funciona?</a></li>
+                    <li><a href="donde_trabajaras.html">¿Dónde trabajarás?</a></li>
+                    <li><a href="de_que_trabajaras.html">¿De qué trabajarás?</a></li>
+                </ul>
+            </li>
+            <li>
+                <input id="group-2" type="checkbox" hidden/>
+                <label class="group-2" for="group-2"><h4>¿Quieres contratar?</h4><span class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li><a href="que_perfiles_ofrecemos.html">¿Qué perfiles ofrecemos?</a></li>
+                    <li><a href="">Guía de contratación</a></li>
+                    <li><a href="experiencias.html">Experiencias</a></li>
+                </ul>
+            </li>
+            <li>
+                <input id="group-3" type="checkbox" hidden/>
+                <label class="group-3" for="group-3"><h4>Contacto</h4><span class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li class="details">Teléfono del centro: 971278150</li>
+                    <li class="details">Fax del centro: 971278155</li>
+                    <li class="details">Email: test@test.com</li>
+                </ul>
+            </li>
+            <li>
+                <input id="group-4" type="checkbox" hidden/>
+                <label class="group-4" for="group-4"><h4>Localización</h4><span class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li class="details">Calle Caracas, 6 (Polígono de Llevant)</li>
+                    <li class="details">07007 Palma de Mallorca (Illes Balears)</li>
+                    <li id="map" class="details" center>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1220.548371809852!2d2.6672159280331953!3d39.56887675907247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55bc574de040df4a!2sIES+Francesc+de+Borja+Moll!5e0!3m2!1ses!2ses!4v1487691882597"
+                                width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input id="group-5" type="checkbox" hidden/>
+                <label class="group-5" for="group-5"><h4>Horario general del centro</h4><span
+                        class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li>Mañana: 8:00h a 15:00h</li>
+                    <li>Tarde: 15:45h a 21:30h</li>
+                </ul>
+            </li>
+            <li>
+                <input id="group-6" type="checkbox" hidden/>
+                <label class="group-6" for="group-6"><h4>Horario secretaria</h4><span class="rotate">+</span></label>
+                <ul class="group-list">
+                    <li>Mañana: 10:00h a 13:00h (de lunes a viernes)</li>
+                    <li>Tarde: Solo los Martes de 16:00h a 20:00h</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
