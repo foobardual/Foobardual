@@ -20,7 +20,7 @@
             font-size:4.8rem;
         }
         span,a,h2{
-            font-size: 1.6rem;
+            font-size: 3.6rem;
         }
         h2{
             display:inline-block;
@@ -84,9 +84,9 @@
         .btnHome{
             position: relative;
             display: block;
-            margin: 20% auto;
+            margin: 25% auto;
             width: calc(70% - 30px);
-            padding: 75px 15px 0;
+            padding: 30px 15px 0;
             text-align: center;
             height: 6rem;
             background: black;
@@ -98,25 +98,25 @@
         .btnHome:after {
             content: "▲";
             color: black;
-            font-size: 15.8rem;
+            font-size: 11.3rem;
             position: absolute;
         }
         .btnHome:nth-of-type(1):after {
             transform: scale(0.5,1) rotate(-90deg);
-            left: -10.4rem;
-            top: -3.7rem;
+            left: -7.42rem;
+            top: -2.6rem;
             text-shadow: -19px 20px 20px rgba(0,0,0,0.7);
         }
         .btnHome:nth-of-type(2):after {
             transform: scale(0.5,1) rotate(90deg);
-            right: -10.4rem;
-            top: -3.7rem;
+            right: -7.4rem;
+            top: -2.6rem;
             text-shadow: 17px -9px 20px rgba(0,0,0,0.7);
         }
         .btnHome:nth-of-type(3):after {
             content: "▼";
-            left: calc(50% - 7.8rem);
-            bottom: -185px;
+            left: calc(50% - 6rem);
+            bottom: -132px;
             transform: scale(1,0.5);
             text-shadow: -6px 20px 20px rgba(0,0,0,0.5);
         }
@@ -129,6 +129,9 @@
             width: 100%;
             white-space: nowrap;
             background: honeydew;
+        }
+        #items *{
+            white-space: initial;
         }
         .item {
             display: inline-block;
@@ -212,7 +215,7 @@
         /*test*/
         body {
             background: #99B0aa;
-            overflow: auto;
+            overflow: hidden;
         }
 
 
@@ -281,6 +284,7 @@
             white-space: initial;
             font-size: 1.6rem;
             text-align: center;
+            min-height: 100vh;
         }
         .nuevoRes p {
             text-align: justify;
@@ -292,6 +296,10 @@
             padding: 15px 32px;
             font-size: 2rem;
             cursor: pointer;
+            width: 80%;
+            -webkit-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 7px 25px 20px 0px rgba(0,0,0,0.75);
         }
         #collapse1, #collapse2, #collapse3{
             margin-top: 50px;
@@ -300,6 +308,131 @@
         .mostrarResumen{
             display: none;
         }
+
+        .active a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .active a:hover {
+            color:white ;
+        }
+
+        .volver {
+            display: inline-block;
+            position: relative;
+            color: white;
+            background-color: black;
+            width: 3rem;
+            font-size: 2.6rem;
+        }
+
+        .volver-izq{
+            left: 54%;
+        }
+
+        .volver-dcha{
+            right: 26%;
+        }
+
+        @media (min-device-width: 800px){
+            h1 {
+                font-size: 2rem;
+            }
+
+            span,a,h2{
+                font-size: 1.6rem;
+            }
+
+            .cabeceraHome {
+                min-height: 2rem;
+            }
+
+            .resumen nav {
+                height: initial;
+            }
+            .item.resumen {
+                padding-top: 10rem;
+                vertical-align: top;
+            }
+
+            .item.resumen::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            /*.item.resumen {*/
+                /*padding-top: initial;*/
+                /*height: initial;*/
+            /*}*/
+
+            .item.estudiar, .item.contratar {
+                padding-top: 9rem;
+            }
+
+            .btnHome {
+                width: calc(70% - 30rem);
+                margin: 0 auto 10%;
+                padding: 20px 15px 0;
+                height: 3rem;
+            }
+
+            .btnHome:nth-of-type(1):after {
+                left: -4.1rem;
+                top: -1.45rem;
+            }
+
+            .btnHome:nth-of-type(2):after {
+                right: -4.11rem;
+                top: -1.4rem;
+            }
+
+            .btnHome:nth-of-type(3):after {
+                left: calc(50% - 2.8rem);
+                bottom: -73.09px;
+            }
+
+            .btnHome:after {
+                font-size: 6.15rem;
+            }
+
+            .hg-twirl {
+                top: 10%;
+                left: 28%;
+                animation: spin 15s linear infinite;
+            }
+
+            .hg-twirl li {
+                height: 33rem;
+                width: 37rem;
+            }
+
+            .nuevoRes {
+                margin-top: 3rem;
+                padding: 11rem 0;
+            }
+
+            .segundoMenuHome>div {
+                padding: 30px 25px;
+            }
+
+            .segundoMenuHome.menuContratar>div {
+                padding: 30px 25px;
+            }
+
+            .segundoMenuHome.menuContratar>div.active {
+                padding: 30px 25px;
+            }
+
+            .volver-izq{
+                left: 52%;
+            }
+
+            .volver-dcha{
+                right: 34%;
+            }
+
+            }
     </style>
 </head>
 <body>
@@ -310,17 +443,18 @@
             <li></li>
         </div>
         <div class="item estudiar">
-            <h2>QUIERES ESTUDIAR?</h2>
+            <div class="volver volver-izq" onclick="goResumen()">►</div>
+            <h2>¿QUIERES ESTUDIAR?</h2>
             <div class="segundoMenuHome menuEstudiar">
-                <div><a>¿COMO ACCEDER?</a></div>
-                <div><a>¿COMO FUNCIONA?</a></div>
-                <div><a>¿DONDE TRABAJARAS?</a></div>
-                <div><a>¿DE QUE TRABAJARAS?</a></div>
+                <div><a href="/Foobardual/pages/como_acceder.html">¿COMO ACCEDER?</a></div>
+                <div><a href="/Foobardual/pages/como_funciona.html">¿COMO FUNCIONA?</a></div>
+                <div><a href="/Foobardual/pages/donde_trabajaras.html">¿DONDE TRABAJARAS?</a></div>
+                <div><a href="/Foobardual/pages/de_que_trabajaras.html">¿DE QUE TRABAJARAS?</a></div>
             </div>
         </div>
         <div class="item resumen">
-            <div class="navegadorHome"><nav><div class="btnHome" onclick="goEstudiar()"><span>Quieres Estudiar?</span></div><div class="btnHome" onclick="goContratar()"><span>Quieres Contratar?</span></div><div class="btnHome" onclick="goVerticalResumen()"><span>Resumen</span></div></nav></div>
-            <div class="nuevoRes"><div class="item resumen">
+            <div class="navegadorHome"><nav><div class="btnHome" onclick="goEstudiar()"><span>¿Quieres Estudiar?</span></div><div class="btnHome" onclick="goContratar()"><span>¿Quieres Contratar?</span></div><div class="btnHome" onclick="goVerticalResumen()"><span>Resumen</span></div></nav></div>
+            <div class="nuevoRes"><div>
                 <h2>RESUMEN</h2>
                 <!--<h2 onclick="toggleChildren('collapse1')">¿quiénes somos?</h2>-->
                 <div id="collapse1">
@@ -374,12 +508,12 @@
             </div></div>
         </div>
         <div class="item contratar">
-            <h2>QUIERES CONTRATAR</h2>
+            <div class="volver volver-dcha" onclick="goResumen()">◄</div>
+            <h2>¿QUIERES CONTRATAR</h2>
             <div class="segundoMenuHome menuContratar">
-                <div><a>¿COMO ACCEDER?</a></div>
-                <div><a>¿COMO FUNCIONA?</a></div>
-                <div><a>¿DONDE TRABAJARAS?</a></div>
-                <div><a>¿DE QUE TRABAJARAS?</a></div>
+                <div><a href="/Foobardual/pages/como_acceder.html">¿QUE PERFILES OFRECEMOS?</a></div>
+                <div><a href="/Foobardual/pages/guia_de_contratacion.html">GUIA DE CONTRATACION</a></div>
+                <div><a href="/Foobardual/pages/experiencias.html">EXPERIENCIAS</a></div>
             </div>
         </div>
     </div>
@@ -407,6 +541,8 @@
 
     var goContratar = function(){
         scrollTo(objDiv, window.innerWidth*3 , 200,"scrollLeft");}
+
+
     var delayedExec = function(after, fn) {
         var timer;
         return function() {
@@ -424,24 +560,29 @@
         if(objDiv.scrollLeft-(window.innerWidth/2)<0){
             goEstudiar(0);
             desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "active", "circulo");
-            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "circulo");
+//            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "circulo");
         }
         else if(objDiv.scrollLeft-(window.innerWidth*1.5)> 0){
             goContratar(2);
             desplegarOpciones(document.getElementsByClassName("menuContratar")[0],"active", "circulo");
-            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "circulo");
+//            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "circulo");
         }
         else{
             goResumen(1);
-            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "");
-            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "");
+//            desplegarOpciones(document.getElementsByClassName("menuEstudiar")[0], "", "");
+//            desplegarOpciones(document.getElementsByClassName("menuContratar")[0], "", "");
         }
     });
     var resumContent = document.getElementsByClassName("resumen")[0];
 
 
-    var goVerticalResumen = function(){
-        scrollTo(resumContent, (window.outerHeight*2) , 300,"scrollTop");}
+    var goVerticalResumen = function() {
+        if (window.outerHeight < 800) {
+            scrollTo(resumContent, (window.outerHeight * 2), 300, "scrollTop");
+        } else {
+            scrollTo(resumContent, (window.outerHeight), 300, "scrollTop");
+        }
+    }
 
 
     var verticalScrollStopper = delayedExec(500, function() {
@@ -450,7 +591,11 @@
                 scrollTo(resumContent, 0 , 300,"scrollTop");
                 document.getElementsByClassName("hg-twirl")[0].className="hg-twirl"}
             else{
-                scrollTo(resumContent, (window.outerHeight*2.3) , 300,"scrollTop");
+                if (window.outerHeight<800){
+                    scrollTo(resumContent, (window.outerHeight*2.3) , 300,"scrollTop");
+                } else {
+                    scrollTo(resumContent, (window.outerHeight) , 300,"scrollTop");
+                }
                 document.getElementsByClassName("hg-twirl")[0].className="hg-twirl circulo"
             }}
         else{
@@ -478,6 +623,11 @@
     window.onload = function() {
         goResumen();
 //        document.getElementById("items").style.width= window.innerWidth + "px";
+//        var items=document.getElementsByClassName("item");
+//        for(var i=0; i<items.length;i++){
+//            console.log(items[i]);
+//            items[i].style.width= window.innerWidth + "px";
+//        }
     };
 </script>
 </html>
