@@ -12,28 +12,41 @@
 </head>
 
 <body>
-        <header>
-            <h1>Qué aprenderás</h1>
+
+    <header>
+        <div>
             <div>
-                <div>
-                    <button onclick="desplegarMenu()">Menu</button>
-                    <div class="menu">
-                        <a href="index.html#quieres_estudiar">¿Quieres estudiar?</a>
-                        <ul>
-                            <li><a href="como_acceder.html">¿Como acceder?</a></li>
-                            <li><a href="como_funciona.html">¿Como funciona?</a></li>
-                            <li><a href="donde_trabajaras.html">¿Donde trabajaras?</a></li>
-                            <li><a href="de_que_trabajaras.html">¿De que trabajaras?</a></li>
-                            <li><a href="experiencias.html">Experiencias</a></li>
-                        </ul>
-                    </div>
+                <button onclick="desplegarMenu()">Menu</button>
+                <div class="menu">
+
+                    <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Quieres estudiar?</span>
+                    <ul>
+                        <li><a href="#" onclick="seccionesBGColor('#FFFFFF')">¿Cómo acceder?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#80DEEA')">¿Cómo funciona?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#FFF59D')">¿Dónde trabajarás?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿De qué trabajarás?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué aprenderás?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué derechos y obligaciones tendrás?</a></li>
+                    </ul>
+
+                    <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Quieres contratar?</span>
+                    <ul>
+                        <li><a href="#" onclick="seccionesBGColor('#6CA299')">¿Qué perfiles ofrecemos?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#D4AE6A')">¿Cómo contratar?</a></li>
+                        <li><a href="#" onclick="seccionesBGColor('#CC6672')">Experiencias</a></li>
+                    </ul>
                 </div>
-                <a href="index.html">FooBar Dual</a>
-                <div class="buscar">
-                    <input type="text" placeholder="buscar" />
-                </div>
+
             </div>
-        </header>
+
+            <a href="homeFooBar.html">FooBar Dual</a>
+            <h1>¿cómo acceder?</h1>
+            <div class="buscar">
+                <input type="text" placeholder="buscar" />
+            </div>
+        </div>
+    </header>
+
         <main class="container">
             <h1>Qué aprenderás</h1>
             <section id="primero_DAW">
