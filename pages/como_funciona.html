@@ -10,26 +10,44 @@
 </head>
 
 <body>
-    <header>
-        <h1>Cómo funciona</h1>
+
+<header>
+    <div>
         <div>
             <button onclick="desplegarMenu()">Menu</button>
             <div class="menu">
-                <a href="../index.html#quieres_estudiar">¿Quieres estudiar?</a>
+
+                <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Quieres estudiar?</span>
                 <ul>
-                    <li><a href="como_acceder.html">¿Cómo acceder?</a></li>
-                    <li><a href="como_funciona.html">¿Cómo funciona?</a></li>
-                    <li><a href="donde_trabajaras.html">¿Dónde trabajaras?</a></li>
-                    <li><a href="de_que_trabajaras.html">¿De qué trabajaras?</a></li>
-                    <li><a href="experiencias.html">Experiencias</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#FFFFFF')">¿Cómo acceder?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#80DEEA')">¿Cómo funciona?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#FFF59D')">¿Dónde trabajarás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿De qué trabajarás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué aprenderás?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#F48FB1')">¿Qué derechos y obligaciones tendrás?</a></li>
+                </ul>
+
+                <span class="mainMenuBtn" onclick="desplegarSubMenu(this)">¿Quieres contratar?</span>
+                <ul>
+                    <li><a href="#" onclick="seccionesBGColor('#6CA299')">¿Qué perfiles ofrecemos?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#D4AE6A')">¿Cómo contratar?</a></li>
+                    <li><a href="#" onclick="seccionesBGColor('#CC6672')">Experiencias</a></li>
                 </ul>
             </div>
-        </div>
-    </header>
 
-    <main class="container">
+        </div>
+
+        <a href="homeFooBar.html">FooBar Dual</a>
+        <h1>¿cómo funciona?</h1>
+        <div class="buscar">
+            <input type="text" placeholder="buscar" />
+        </div>
+    </div>
+</header>
+
+    <main class="container" id="como_funciona">
         <h1>Cómo funciona</h1>
-    
+
         <section id="calendario">
             <h2>Calendario</h2>
             <div class="contents">
@@ -48,7 +66,7 @@
                 <p>La distribución horaria semanal tiene que ser, con carácter general, de 15 horas semanales en el centro educativo de forma presencial, completada con contenidos y actividades a distancia, junto con 25 horas semanales de formación-trabajo en la empresa. No se pueden superar en el cómputo semanal las 40 horas entre formación y trabajo efectivo.</p>
             </div>
         </section>
-        
+
         <section id="Proceso_seleccion_empresa">
             <h2>Proceso de selección de la empresa</h2>
             <div class="contents">
@@ -81,7 +99,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div id="sitemap">
             <div id="estudiarLinks">

@@ -1,7 +1,6 @@
 /*reset basico para fuente*/
 body {
     font-size: 20px;
-    background-color: #FF80AA;
 }
 
 header {
@@ -27,18 +26,77 @@ h2 {
     font-size: 1.5em;
 }
 
+
+/*Estilos menu*/
+
 .menu {
     display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .menu.active {
     display: block;
-    height: 100%;
+    height: inherit;
     position: absolute;
     border: 1px solid;
     top: 108px;
     padding: 20px;
     background-color: white;
+}
+
+.menu ul{
+    overflow:hidden;
+    height: 0;
+}
+
+.menu span.active+ul{
+    overflow:hidden;
+    height: inherit;
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 120px;
+        width: 30%;
+        left: 0;
+        height: 100%;
+        line-height: 2;
+    }
+
+    .container {
+        margin-left: 25%;
+    }
+}
+
+.menu li, .menu span{
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    width: auto;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.menu li a, .menu span{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.menu li a:hover, .menu span:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #33B5E5;
+    border-radius: 10px;
+}
+
+button{
+    font-size: 32px;
 }
 
 header {
@@ -56,7 +114,7 @@ header div, header a, header h1, header button {
 }
 
 header div:first-child {
-    padding: 3%;
+    padding: 1%;
 }
 
 header .buscar {
@@ -77,30 +135,54 @@ header h1 {
     top: 0;
 }
 
-#calendario>.contents {
-    background: url('../img/ic_date_range_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
-}
-#proceso_seleccion_empresa>.contents {
-    background: url('../img/ic_accessibility_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
+.container#como_funciona {
+    background: url('../img/ic_settings_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
 }
 
+.container#donde_trabajaras {
+    background: url('../img/ic_business_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#de_que_trabajaras {
+    background: url('../img/ic_developer_mode_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_acceder {
+    background: url('../img/ic_open_in_browser_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#experiencias {
+    background: url('../img/ic_share_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_contratar {
+    background: url('../img/ic_rowing_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#que_perfiles_ofrecemos {
+    background: url('../img/ic_recent_actors_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
 h2::first-letter {
     text-transform: uppercase;
-}
-@media screen and (min-width: 800px) {
-    .menu {
-        display: block;
-        position: fixed;
-        top: 120px;
-        width: 25%;
-        left: 0;
-        height: 100%;
-        line-height: 2;
-    }
-
-    .container {
-        margin-left: 25%;
-    }
 }
