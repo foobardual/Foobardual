@@ -1,7 +1,6 @@
 /*reset basico para fuente*/
 body {
     font-size: 20px;
-    background-color: #FF80AA;
 }
 
 header {
@@ -136,15 +135,54 @@ header h1 {
     top: 0;
 }
 
-#calendario>.contents {
-    background: url('../img/ic_date_range_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
-}
-#proceso_seleccion_empresa>.contents {
-    background: url('../img/ic_accessibility_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
+.container#como_funciona {
+    background: url('../img/ic_settings_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
 }
 
+.container#donde_trabajaras {
+    background: url('../img/ic_business_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#de_que_trabajaras {
+    background: url('../img/ic_developer_mode_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_acceder {
+    background: url('../img/ic_open_in_browser_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#experiencias {
+    background: url('../img/ic_share_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_contratar {
+    background: url('../img/ic_rowing_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#que_perfiles_ofrecemos {
+    background: url('../img/ic_recent_actors_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
 h2::first-letter {
     text-transform: uppercase;
 }
