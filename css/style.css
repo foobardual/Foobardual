@@ -1,7 +1,6 @@
 /*reset basico para fuente*/
 body {
     font-size: 20px;
-    background-color: #FF80AA;
 }
 
 header {
@@ -55,9 +54,9 @@ header div, header a, header h1, header button {
     display: inline-block;
 }
 
-/*header div:first-child {*/
-    /*padding: 3%;*/
-/*}*/
+header div:first-child {
+    padding: 3%;
+}
 
 header .buscar {
     float: right;
@@ -77,15 +76,54 @@ header h1 {
     top: 0;
 }
 
-#calendario>.contents {
-    background: url('../img/ic_date_range_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
-}
-#proceso_seleccion_empresa>.contents {
-    background: url('../img/ic_accessibility_white_48px.svg') no-repeat;
-    background-size: 100% 100%;
+.container#como_funciona {
+    background: url('../img/ic_settings_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
 }
 
+.container#donde_trabajaras {
+    background: url('../img/ic_business_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#de_que_trabajaras {
+    background: url('../img/ic_developer_mode_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_acceder {
+    background: url('../img/ic_open_in_browser_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#experiencias {
+    background: url('../img/ic_share_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#como_contratar {
+    background: url('../img/ic_rowing_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.container#que_perfiles_ofrecemos {
+    background: url('../img/ic_recent_actors_cyan_48px.svg') no-repeat;
+    background-size: 75% 75%;
+    background-position: right;
+    background-attachment: fixed;
+}
 h2::first-letter {
     text-transform: uppercase;
 }
@@ -205,97 +243,3 @@ input[type=checkbox]:checked + label .rotate {
         margin-left: 25%;
     }
 }
-
-    /*!* ----- FOOTER ----- *!*/
-    /*h4{*/
-        /*margin-bottom: 2rem;*/
-    /*}*/
-    /*.rotate {*/
-        /*display: none;*/
-    /*}*/
-    /*.nav a {*/
-        /*display: list-item;*/
-        /*padding: 0;*/
-    /*}*/
-    /*.nav label{*/
-        /*display: list-item;*/
-        /*background: none;*/
-        /*cursor: none;*/
-    /*}*/
-    /*.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: none; }*/
-    /*.nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {*/
-        /*color: white;*/
-        /*background: none;*/
-    /*}*/
-    /*.group-list a{*/
-        /*background: none;*/
-        /*box-shadow: none;*/
-    /*}*/
-    /*.nav__list, .group-list{*/
-        /*font-size: 1rem;*/
-    /*}*/
-    /*.group-list{*/
-        /*max-height: none;*/
-    /*}*/
-    /*.nav__list > li:nth-child(1){*/
-        /*position: relative;*/
-        /*top: -7rem;*/
-        /*left: -2rem;*/
-    /*}*/
-    /*.nav__list > li:nth-child(2){*/
-        /*position: relative;*/
-        /*top: -1rem;*/
-        /*left: -11.5rem;*/
-    /*}*/
-    /*.nav__list > li:nth-child(3){*/
-        /*position: relative;*/
-        /*top: -8rem;*/
-        /*right: 6rem;*/
-    /*}*/
-    /*.nav__list > li:nth-child(4){*/
-        /*position: relative;*/
-        /*top: 6rem;*/
-        /*right: 20rem;*/
-    /*}*/
-
-    /*.nav__list > li:nth-child(5){*/
-        /*position: relative;*/
-        /*top: -8rem;*/
-        /*left: -5rem;*/
-    /*}*/
-
-    /*.nav__list > li:nth-child(6){*/
-        /*position: relative;*/
-        /*top: -8rem;*/
-        /*left: 20rem;*/
-    /*}*/
-    /*.nav__list > li:nth-child(even){*/
-        /*display: inline-block;*/
-    /*}*/
-    /*.nav__list > li:nth-child(odd){*/
-        /*display: inline-block;*/
-    /*}*/
-
-    /*!* ----- FIN FOOTER ----- *!*/
-
-
-/*}*/
-
-
-/*!******************************************!*/
-/*!****   DISEÑO PARA ESCRITORIO         ****!*/
-/*!******************************************!*/
-
-/*@media screen and (min-width: 1056px) {*/
-    /*.nav__list > li:nth-child(5){*/
-        /*position: relative;*/
-        /*top: -2rem;*/
-        /*left: 5rem;*/
-    /*}*/
-
-    /*.nav__list > li:nth-child(6){*/
-        /*position: relative;*/
-        /*top: -8rem;*/
-        /*left: -10rem;*/
-    /*}*/
-/*}*/
